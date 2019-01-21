@@ -5,14 +5,24 @@
     <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-    <button>Take Photo</button>
-    Red min: <input type='range' value='50' min='0' max='100' step='1'>
-    Red max: <input type='range' value='50' min='0' max='100' step='1'>
-    Green min: <input type='range' value='50' min='0' max='100' step='1'>
-    Green max: <input type='range' value='50' min='0' max='100' step='1'>
-    Blue min: <input type='range' value='50' min='0' max='100' step='1'>
-    Blue max: <input type='range' value='50' min='0' max='100' step='1'>
-    <canvas></canvas>
+    <div class='filters'>
+    <button onClick='takePhoto()'>Take Photo</button>
+    <br>
+    <label for='rmin'>Red min:&nbsp;&nbsp;&nbsp;</label><input type='range' min='0' max='255' name='rmin'>
+    <label for='rmax'>Red max:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type='range' min='0' max='255' name='rmax'>
+    <br>
+    <label for='gmin'>Green min:</label><input type='range' min='0' max='255' name='gmin'>
+    <label for='gmax'>Green max:</label><input type='range' min='0' max='255' name='gmax'>
+    <br>
+    <label for='bmin'>Blue min:&nbsp;&nbsp;</label><input type='range' min='0' max='255' name='bmin'>
+    <label for='bmax'>Blue max:&nbsp;&nbsp;</label><input type='range' min='0' max='255' name='bmax'>
+    <br>
+    </div>
+    <canvas class='photo'></canvas>
+    <video class='player'></video>
+    <div class='strip'></div>
+    
+    <audio class='snap' src='http://wesbos.com/demos/photobooth/snap.mp3' hidden></audio>
 </body>
 <script src='app.js'>
 </script>

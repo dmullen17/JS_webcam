@@ -1,0 +1,22 @@
+.player {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 250px;
+}
+
+input {
+    margin: 12px;
+}
+
+.filters {
+    margin-bottom: 60px;
+}
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  background: white;
+}
